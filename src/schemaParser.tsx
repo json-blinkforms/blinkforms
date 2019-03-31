@@ -15,6 +15,8 @@ import {
     SchemaParserConfigOpt,
 } from "./schemaTypes";
 
+import Ajv from "ajv";
+
 import { defaultParserConfig } from "./defaultParserConfig";
 
 export interface AjvError {
@@ -108,7 +110,6 @@ export function transformOutputToRawData(metaOutput: any): any {
 }
 
 export async function validateRoot(rootNode: RootNode) {
-    const Ajv = ((await import("ajv")) as unknown as any).default;
 
     const ajv = new Ajv({
         allErrors: true,
