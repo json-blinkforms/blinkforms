@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
 
-import { SimpleNode } from "../simpleNodes";
+import { SimpleNode } from "@blinkforms/core/simpleNodes";
 
 import {
     FormContext,
     NodeStringSchema,
-} from "../schemaTypes";
+} from "@blinkforms/core/schemaTypes";
 
 const InputWrapper = styled.div`
   width: 10vw;

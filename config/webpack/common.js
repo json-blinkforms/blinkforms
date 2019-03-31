@@ -3,20 +3,12 @@ require('typescript-require');
 // shared config (dev and prod)
 const path = require('path');
 const { CheckerPlugin } = require('awesome-typescript-loader');
+const webpack = require('webpack');
 
 module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', 'index.ts', 'index.tsx', 'index.js', 'index.jsx'],
-    alias: {
-      'scss': path.join(__dirname, '..', '..', 'src', 'scss'),
-      'components': path.join(__dirname, '..', '..', 'src', 'components', 'universal'),
-      'pages': path.join(__dirname, '..', '..', 'src', 'components', 'pages'),
-      'langs': path.join(__dirname, '..', '..', 'src', 'langs'),
-      'routes': path.join(__dirname, '..', '..', 'src', 'routes'),
-      'themes': path.join(__dirname, '..', '..', 'src', 'themes'),
-      'modules': path.join(__dirname, '..', '..', 'src', 'modules'),
-      'img': path.join(__dirname, '..', '..', 'src', 'assets', 'img')
-    }
+    alias: {},
   },
   context: path.resolve(__dirname, '../../src'),
   module: {
@@ -62,6 +54,9 @@ module.exports = {
   },
   plugins: [
     new CheckerPlugin(),
+    new webpack.NormalModuleReplacementPlugin(/@blinkforms\/core\/.*/, function(resource) {
+        resource.request = resource.request.replace(/@blinkforms\/core/, path.join('..', 'typescript-core', 'src'));
+    }),
   ],
   performance: {
     hints: false,

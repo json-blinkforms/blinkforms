@@ -1,8 +1,8 @@
-import { CompositeNode, NodeO } from "../compositeNodes";
+import { CompositeNode, NodeO } from "@blinkforms/core/compositeNodes";
 
 import {
     NodeObjectSchema,
-} from "../schemaTypes";
+} from "@blinkforms/core/schemaTypes";
 
 export default class ObjectDefault extends CompositeNode<NodeO, NodeObjectSchema> {
 

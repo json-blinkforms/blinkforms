@@ -1,9 +1,9 @@
-import { SchemaParserConfig } from "./schemaTypes";
+import { SchemaParserConfig } from "@blinkforms/core/schemaTypes";
 
 import ObjectDefault from "./renderers/ObjectDefault";
 import StringDefault from "./renderers/StringDefault";
 
-export const defaultParserConfig: SchemaParserConfig = {
+export const defaultConfig: SchemaParserConfig = {
     handlers: {
         ROOT: {
             default: null,

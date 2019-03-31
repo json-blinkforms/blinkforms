@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled  from "styled-components";
 
-import { transformSchemaIntoTree } from "./schemaParser";
-import { FormContext, NodeAny, NodeState, NodeType, RootNode, Schema } from "./schemaTypes";
+import { transformSchemaIntoTree } from "@blinkforms/core/schemaParser";
+import { FormContext, NodeAny, NodeState, NodeType, RootNode, Schema } from "@blinkforms/core/schemaTypes";
 
 const Wrapper = styled.div`
   width: 100%;
