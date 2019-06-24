@@ -2,7 +2,7 @@
 reference: react-json-blinkforms
 ---
 
-@# React-json-blinkforms
+@# React
 
 Components elo
 
