@@ -28,10 +28,18 @@ storiesOf('Basic form', module)
                 },
                 "array": {
                     type: "array",
-                    items: {
-                        type: "string",
-                        minLength: 3,
-                    },
+                    ui: "tuple",
+                    items: [
+                        {
+                            type: "string",
+                            title: "Elem1 - string",
+                            minLength: 3,
+                        },
+                        {
+                            type: "string",
+                            title: "Elem2 - string",
+                        }
+                    ],
                 },
             },
         }}

@@ -1,18 +1,21 @@
-import ObjectDefaultRenderer from "./ObjectDefault";
-import StringDefaultRenderer from "./StringDefault";
-import ArrayDefaultRenderer from "./ArrayDefault";
+import ObjectDefault from "./ObjectDefault";
+import StringDefault from "./StringDefault";
+
+import ArrayDefault from "./ArrayDefault";
+import ArrayTuple from "./ArrayTuple";
 
 export default {
     ROOT: {
-        default: ObjectDefaultRenderer,
+        default: ObjectDefault,
     },
     STRING: {
-        default: StringDefaultRenderer,
+        default: StringDefault,
     },
     OBJECT: {
-        default: ObjectDefaultRenderer,
+        default: ObjectDefault,
     },
     ARRAY: {
-        default: ArrayDefaultRenderer,
+        default: ArrayDefault,
+        tuple: ArrayTuple,
     },
 };
