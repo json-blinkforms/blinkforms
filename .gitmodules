@@ -1,0 +1,3 @@
+[submodule "react-json-blinkforms"]
+	path = react-json-blinkforms
+	url = https://github.com/json-blinkforms/react-json-blinkforms.git
