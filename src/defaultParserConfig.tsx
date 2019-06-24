@@ -2,6 +2,7 @@ import { SchemaParserConfig } from "@blinkforms/core/schemaTypes";
 
 import ObjectDefault from "./renderers/ObjectDefault";
 import StringDefault from "./renderers/StringDefault";
+import ArrayDefault from "./renderers/ArrayDefault";
 
 export const defaultConfig: SchemaParserConfig = {
     handlers: {
@@ -14,6 +15,11 @@ export const defaultConfig: SchemaParserConfig = {
         OBJECT: {
             default: ObjectDefault,
         },
+        ARRAY: {
+            default: ArrayDefault,
+        },
+        NUMBER: {},
+        BOOLEAN: {},
     },
     rootState: null,
     rootSetState: () => {},

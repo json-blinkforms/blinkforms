@@ -1,6 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
 
+import WithDescription from "./utils/WithDescription";
+import WithErrors from "./utils/WithErrors";
+import WithMargins from "./utils/WithMargins";
+
 import { SimpleNode } from "@blinkforms/core/simpleNodes";
 
 import {
@@ -20,18 +24,20 @@ export default class StringDefault extends SimpleNode<string, NodeStringSchema> 
 
     renderSimple(value: string, context: FormContext) {
         return (
-            <div className={this.getSchema().renderID}>
-                {this.getSchema().title}
-                {this.getSchema().description}
-                <InputWrapper>
-                    <input
-                        value={value}
-                        onChange={(event) => {
-                            this.setState({ value: event.target.value })
-                        }}
-                    />
-                </InputWrapper>
-            </div>
+            <WithMargins parent={this}>
+                <WithErrors parent={this} context={context}>
+                        <WithDescription parent={this}>
+                            <InputWrapper>
+                                <input
+                                    value={value}
+                                    onChange={(event) => {
+                                        this.setState({ value: event.target.value })
+                                    }}
+                                />
+                            </InputWrapper>
+                        </WithDescription>
+                </WithErrors>
+            </WithMargins>
         );
     }
 }

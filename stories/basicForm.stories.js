@@ -19,10 +19,19 @@ storiesOf('Basic form', module)
                     type: "string",
                     renderID: "firstNameClass",
                     title: "Your first name",
+                    minLength: 3,
                 },
                 "lastName": {
                     type: "string",
                     title: "Your last name",
+                    minLength: 3,
+                },
+                "array": {
+                    type: "array",
+                    items: {
+                        type: "string",
+                        minLength: 3,
+                    },
                 },
             },
         }}
