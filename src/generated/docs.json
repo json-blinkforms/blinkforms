@@ -54,33 +54,6 @@
           "reference": "getting-started",
           "route": "blueprint/getting-started",
           "title": "Getting started"
-        },
-        {
-          "children": [
-            {
-              "title": "Understanding TypeScript",
-              "level": 3,
-              "route": "blueprint/reading-the-docs.understanding-typescript"
-            }
-          ],
-          "level": 2,
-          "reference": "reading-the-docs",
-          "route": "blueprint/reading-the-docs",
-          "title": "Reading the documentation"
-        },
-        {
-          "children": [],
-          "level": 2,
-          "reference": "whats-new-2.0",
-          "route": "blueprint/whats-new-2.0",
-          "title": "What's new in 2.0"
-        },
-        {
-          "children": [],
-          "level": 2,
-          "reference": "whats-new-3.0",
-          "route": "blueprint/whats-new-3.0",
-          "title": "What's new in 3.0"
         }
       ],
       "level": 1,
@@ -1451,21 +1424,9 @@
         {
           "tag": "page",
           "value": "getting-started"
-        },
-        {
-          "tag": "page",
-          "value": "reading-the-docs"
-        },
-        {
-          "tag": "page",
-          "value": "whats-new-2.0"
-        },
-        {
-          "tag": "page",
-          "value": "whats-new-3.0"
         }
       ],
-      "contentsRaw": "@# Blueprint\n\n#### Blueprint is a React-based UI toolkit for the web.\n\nIt is optimized for building complex data-dense interfaces for desktop applications.\n\n@reactDocs Welcome\n\n<div class=\"bp3-callout bp3-intent-success bp3-icon-endorsed\">\n    <h4 class=\"bp3-heading\">Blueprint v3 is available now! [See what's new.](#blueprint/whats-new-3.0)</h4>\n</div>\n\n@## Quick start\n\n### Install\n\n**@blueprintjs/core** is the primary Blueprint package on NPM and home to over 40 components.\n\n```sh\nyarn add @blueprintjs/core react react-dom\n```\n\nAdditional components live in the **@blueprintjs/icons**, **@blueprintjs/datetime**, **@blueprintjs/select**, **@blueprintjs/table**, and **@blueprintjs/timezone** packages, separated by use case and significant dependencies. All have peer dependencies on **react** and **react-dom**, so these two packages must be installed alongside Blueprint.\n\n### Import\n\nImport React components from the appropriate package.\n\n```tsx\nimport { Button } from \"@blueprintjs/core\";\n\n<Button intent=\"success\" text=\"button content\" onClick={incrementCounter} />\n```\n\nDon't forget to include the **main CSS file** from each Blueprint package!\n\n```html\n<!-- in index.html, or however you manage your CSS files -->\n<link href=\"path/to/node_modules/normalize.css/normalize.css\" rel=\"stylesheet\" />\n<!-- blueprint-icons.css file must be included alongside blueprint.css! -->\n<link href=\"path/to/node_modules/@blueprintjs/icons/lib/css/blueprint-icons.css\" rel=\"stylesheet\" />\n<link href=\"path/to/node_modules/@blueprintjs/core/lib/css/blueprint.css\" rel=\"stylesheet\" />\n<!-- add other blueprint-*.css files here -->\n```\n\n@## Browser support\n\n**Blueprint supports Chrome, Firefox, Safari, IE 11, and Microsoft Edge.**\n\nYou may experience degraded visuals in IE.\nIE 10 and below are unsupported due to their lack of support for CSS Flexbox Layout.\nThese browsers were deprecated by Microsoft (end of support) in [January 2016](https://www.microsoft.com/en-us/WindowsForBusiness/End-of-IE-support).\n\n@page getting-started\n@page reading-the-docs\n@page whats-new-2.0\n@page whats-new-3.0",
+      "contentsRaw": "@# Blueprint\n\n#### Blueprint is a React-based UI toolkit for the web.\n\nIt is optimized for building complex data-dense interfaces for desktop applications.\n\n@reactDocs Welcome\n\n<div class=\"bp3-callout bp3-intent-success bp3-icon-endorsed\">\n    <h4 class=\"bp3-heading\">Blueprint v3 is available now! [See what's new.](#blueprint/whats-new-3.0)</h4>\n</div>\n\n@## Quick start\n\n### Install\n\n**@blueprintjs/core** is the primary Blueprint package on NPM and home to over 40 components.\n\n```sh\nyarn add @blueprintjs/core react react-dom\n```\n\nAdditional components live in the **@blueprintjs/icons**, **@blueprintjs/datetime**, **@blueprintjs/select**, **@blueprintjs/table**, and **@blueprintjs/timezone** packages, separated by use case and significant dependencies. All have peer dependencies on **react** and **react-dom**, so these two packages must be installed alongside Blueprint.\n\n### Import\n\nImport React components from the appropriate package.\n\n```tsx\nimport { Button } from \"@blueprintjs/core\";\n\n<Button intent=\"success\" text=\"button content\" onClick={incrementCounter} />\n```\n\nDon't forget to include the **main CSS file** from each Blueprint package!\n\n```html\n<!-- in index.html, or however you manage your CSS files -->\n<link href=\"path/to/node_modules/normalize.css/normalize.css\" rel=\"stylesheet\" />\n<!-- blueprint-icons.css file must be included alongside blueprint.css! -->\n<link href=\"path/to/node_modules/@blueprintjs/icons/lib/css/blueprint-icons.css\" rel=\"stylesheet\" />\n<link href=\"path/to/node_modules/@blueprintjs/core/lib/css/blueprint.css\" rel=\"stylesheet\" />\n<!-- add other blueprint-*.css files here -->\n```\n\n@## Browser support\n\n**Blueprint supports Chrome, Firefox, Safari, IE 11, and Microsoft Edge.**\n\nYou may experience degraded visuals in IE.\nIE 10 and below are unsupported due to their lack of support for CSS Flexbox Layout.\nThese browsers were deprecated by Microsoft (end of support) in [January 2016](https://www.microsoft.com/en-us/WindowsForBusiness/End-of-IE-support).\n\n@page getting-started",
       "metadata": {}
     },
     "README": {
@@ -4946,7 +4907,7 @@
       "sourcePath": "src\\docs-data\\node_modules\\ua-parser-js\\license.md",
       "title": "(untitled)",
       "contents": [
-        "<p>MIT License</p>\n<p>Copyright (c) 2012-2019 Faisal Salman &lt;<a href=\"mailto:&#x66;&#x40;&#x66;&#x61;&#x69;&#115;&#x61;&#x6c;&#109;&#x61;&#110;&#46;&#99;&#x6f;&#109;\">&#x66;&#x40;&#x66;&#x61;&#x69;&#115;&#x61;&#x6c;&#109;&#x61;&#110;&#46;&#99;&#x6f;&#109;</a>&gt;</p>\n<p>Permission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the &quot;Software&quot;), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:</p>\n<p>The above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.</p>\n<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.</p>\n"
+        "<p>MIT License</p>\n<p>Copyright (c) 2012-2019 Faisal Salman &lt;<a href=\"mailto:&#x66;&#64;&#102;&#97;&#x69;&#115;&#97;&#108;&#x6d;&#97;&#x6e;&#46;&#99;&#x6f;&#109;\">&#x66;&#64;&#102;&#97;&#x69;&#115;&#97;&#108;&#x6d;&#97;&#x6e;&#46;&#99;&#x6f;&#109;</a>&gt;</p>\n<p>Permission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the &quot;Software&quot;), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:</p>\n<p>The above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.</p>\n<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.</p>\n"
       ],
       "contentsRaw": "MIT License\n\nCopyright (c) 2012-2019 Faisal Salman <<f@faisalman.com>>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
       "metadata": {}
@@ -5311,91 +5272,6 @@
       ],
       "contentsRaw": "@# Getting started\n\n@## Installing Blueprint\n\nBlueprint is available as a collection of NPM packages under the `@blueprintjs`\nscope. Each package appears at the top level of the sidebar to the left, along\nwith its current version.\n\nEach package contains a CSS file and a collection of CommonJS modules exposing React components.\nThe `main` module exports all symbols from all modules so you don't have to import individual files\n(though you can if you want to). The JavaScript components are stable and their APIs adhere to\n[semantic versioning](http://semver.org/).\n\n1.  Install the core package and its peer dependencies with an NPM client like\n    `npm` or `yarn`, pulling in all relevant dependencies:\n\n    ```sh\n    yarn add @blueprintjs/core react react-dom\n    ```\n\n1.  After installation, you'll be able to import the React components in your application:\n\n    ```tsx\n    import { Button, Intent, Spinner } from \"@blueprintjs/core\";\n\n    // using JSX:\n    const mySpinner = <Spinner intent={Intent.PRIMARY} />;\n\n    // use React.createElement if you're not using JSX.\n    const myButton = React.createElement(Button, { intent: Intent.SUCCESS }, \"button content\");\n    ```\n\n1.  **Don't forget to include the main CSS file from each Blueprint package!** Additionally, the\n    `resources/` directory contains supporting media such as fonts and images.\n\n    ```css.scss\n    // using node-style package resolution in a CSS file:\n    @import \"~normalize.css\";\n    @import \"~@blueprintjs/core/lib/css/blueprint.css\";\n    @import \"~@blueprintjs/icons/lib/css/blueprint-icons.css\";\n    ```\n\n    ```html\n    <!-- or using plain old HTML -->\n    <head>\n      <!-- include dependencies manually -->\n      <link href=\"path/to/node_modules/normalize.css/normalize.css\" rel=\"stylesheet\" />\n      <link href=\"path/to/node_modules/@blueprintjs/core/lib/css/blueprint.css\" rel=\"stylesheet\" />\n      <link href=\"path/to/node_modules/@blueprintjs/icons/lib/css/blueprint-icons.css\" rel=\"stylesheet\" />\n      <!-- NOTE: blueprint-icons.css file must be included alongside blueprint.css! -->\n    </head>\n    ```\n\n<div class=\"bp3-callout bp3-intent-primary bp3-icon-info-sign\">\n    <h4 class=\"bp3-heading\">CDN-only usage</h4>\n    Blueprint can instead be quickly added to a page using the Unpkg CDN.\n    [See below for instructions](#blueprint/getting-started.cdn-consumption).\n</div>\n\n@## JS environment\n\n@### Language features\n\nNote that since the minimum supported version of React is [v16](https://reactjs.org/blog/2017/09/26/react-v16.0.html),\nall of its [JavaScript Environment Requirements](https://reactjs.org/docs/javascript-environment-requirements.html) apply to\nBlueprint as well. Blueprint components require the following ES2015 features:\n\n-   `Map`\n-   `Set`\n-   `Array.fill`\n-   `Array.from`\n\nWe recommend polyfilling these features using [es6-shim](https://github.com/paulmillr/es6-shim) or\n[core-js](https://github.com/zloirock/core-js).\n\n@### DOM4\n\nBlueprint relies on a handful of DOM Level 4 API methods: `el.closest()` and `el.contains()`.\n`@blueprintjs/core` depends on a [polyfill library called `dom4`](https://webreflection.github.io/dom4/) to ensure\nthese methods are available. This module is conditionally loaded if Blueprint is used in a browser environment.\n\n@## TypeScript\n\nBlueprint is written in TypeScript and therefore its own `.d.ts` type definitions are distributed in\nthe NPM package and should be resolved automatically by the compiler. However, you'll need to\ninstall typings for Blueprint's dependencies before you can consume it:\n\n```sh\n# required for all @blueprintjs packages:\nnpm install --save @types/react @types/react-dom\n\n# @blueprintjs/timezone requires:\nnpm install --save @types/moment-timezone\n```\n\nBlueprint's declaration files require **TypeScript 2.3+** for default generic parameter arguments: `<P = {}>`.\n\n<div class=\"bp3-callout bp3-intent-primary bp3-icon-info-sign\">\n  For more information, see [Understanding TypeScript](#blueprint/reading-the-docs.understanding-typescript).\n</div>\n\n@## Vanilla JS APIs\n\nJS components are built using React, but that does not limit their usage to just React applications.\nYou can render any component in any JavaScript application with `ReactDOM.render`. Think of it like\nusing a jQuery plugin.\n\n```tsx\nimport { Classes, Intent, Spinner } from \"@blueprintjs/core\";\n\nconst myContainerElement = document.getElementById(\"container\");\n\n// with JSX\nReactDOM.render(<Spinner className={Classes.SMALL} intent={Intent.PRIMARY} />, myContainerElement);\n\n// with vanilla JS, use React.createElement\nReactDOM.render(\n    React.createElement(Spinner, {\n        className: Classes.SMALL,\n        intent: Intent.PRIMARY\n    }),\n    myContainerElement\n);\n```\n\nTo remove the component from the DOM and clean up, unmount it:\n\n```tsx\nReactDOM.unmountComponentAtNode(myContainerElement);\n```\n\nCheck out the [React API docs](https://facebook.github.io/react/docs/react-api.html) for more details.\n\n@## CDN consumption\n\nBlueprint supports the venerable [unpkg CDN](https://unpkg.com). Each package provides a UMD\n`dist/[name].bundle.js` file containing the bundled source code. The UMD wrapper exposes each\nlibrary on the `Blueprint` global variable: `Blueprint.Core`, `Blueprint.Datetime`, etc.\n\nThese bundles _do not include_ external dependencies; your application will need to ensure that\n`normalize.css`, `classnames`, `dom4`, `react`, `react-dom`, `react-transition-group`, `popper.js`, and\n`react-popper` are available at runtime.\n\n```html\n<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width\">\n    <title>Blueprint Starter Kit</title>\n\n    <!-- Style dependencies -->\n    <link href=\"https://unpkg.com/normalize.css@^7.0.0\" rel=\"stylesheet\" />\n    <!-- Blueprint stylesheets -->\n    <link href=\"https://unpkg.com/@blueprintjs/icons@^3.4.0/lib/css/blueprint-icons.css\" rel=\"stylesheet\" />\n    <link href=\"https://unpkg.com/@blueprintjs/core@^3.10.0/lib/css/blueprint.css\" rel=\"stylesheet\" />\n  </head>\n  <body>\n    <!-- Blueprint dependencies -->\n    <script src=\"https://unpkg.com/classnames@^2.2\"></script>\n    <script src=\"https://unpkg.com/dom4@^1.8\"></script>\n    <script src=\"https://unpkg.com/tslib@^1.9.0\"></script>\n    <script src=\"https://unpkg.com/react@^16.2.0/umd/react.production.min.js\"></script>\n    <script src=\"https://unpkg.com/react-dom@^16.2.0/umd/react-dom.production.min.js\"></script>\n    <script src=\"https://unpkg.com/react-transition-group@^2.2.1/dist/react-transition-group.min.js\"></script>\n    <script src=\"https://unpkg.com/popper.js@^1.14.1/dist/umd/popper.js\"></script>\n    <script src=\"https://unpkg.com/react-popper@^1.0.0/dist/index.umd.min.js\"></script>\n    <script src=\"https://unpkg.com/resize-observer-polyfill@^1.5.0\"></script>\n    <!-- Blueprint packages (note: icons script must come first) -->\n    <script src=\"https://unpkg.com/@blueprintjs/icons@^3.4.0\"></script>\n    <script src=\"https://unpkg.com/@blueprintjs/core@^3.10.0\"></script>\n\n    <div id=\"btn\"></div>\n    <script>\n      const button = React.createElement(Blueprint.Core.Button, {\n        icon: \"cloud\",\n        text: \"CDN Blueprint is go!\",\n      });\n      ReactDOM.render(button, document.querySelector(\"#btn\"));\n    </script>\n  </body>\n</html>\n```",
       "metadata": {}
-    },
-    "reading-the-docs": {
-      "reference": "reading-the-docs",
-      "route": "blueprint/reading-the-docs",
-      "sourcePath": "src\\reading-the-docs.md",
-      "title": "Reading the documentation",
-      "contents": [
-        {
-          "tag": "heading",
-          "value": "Reading the documentation",
-          "level": 1,
-          "route": "blueprint/reading-the-docs"
-        },
-        {
-          "tag": "heading",
-          "value": "Understanding TypeScript",
-          "level": 2,
-          "route": "blueprint/reading-the-docs.understanding-typescript"
-        },
-        "<p>Blueprint is written in <a href=\"https://www.typescriptlang.org/\">TypeScript</a>, a statically typed superset\nof JavaScript that compiles to plain JavaScript. All the code samples throughout this site and\nall interactive examples are also written in TypeScript. TypeScript code looks exactly like ES2015+\ncode with the addition of type signatures, which typically appear after colons and are <em>italicized</em>\nin our syntax theme.</p>\n<pre class=\"editor editor-colors\"><div class=\"line\"><span class=\"source ts\"><span class=\"comment line double-slash ts\"><span class=\"punctuation definition comment ts\"><span>//</span></span><span>&nbsp;variables</span></span></span></div><div class=\"line\"><span class=\"source ts\"><span class=\"meta var expr ts\"><span class=\"storage type ts\"><span>const</span></span><span>&nbsp;</span><span class=\"meta var-single-variable expr ts\"><span class=\"meta definition variable ts variable other readwrite ts\"><span>variableName</span></span><span class=\"meta type annotation ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"entity name type ts\"><span>varType</span></span></span></span></span><span class=\"punctuation terminator statement ts\"><span>;</span></span></span></div><div class=\"line\"><span class=\"source ts\"><span class=\"meta var expr ts\"><span class=\"storage type ts\"><span>const</span></span><span>&nbsp;</span><span class=\"meta var-single-variable expr ts\"><span class=\"meta definition variable ts variable other readwrite ts\"><span>name</span></span><span class=\"meta type annotation ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"support type primitive ts\"><span>string</span></span></span></span></span><span class=\"punctuation terminator statement ts\"><span>;</span></span></span></div><div class=\"line\"><span class=\"source ts\"><span class=\"meta var expr ts\"><span class=\"storage type ts\"><span>const</span></span><span>&nbsp;</span><span class=\"meta var-single-variable expr ts\"><span class=\"meta definition variable ts variable other readwrite ts\"><span>disabled</span></span><span class=\"meta type annotation ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"support type primitive ts\"><span>boolean</span></span></span></span></span><span class=\"punctuation terminator statement ts\"><span>;</span></span></span></div><div class=\"line\"><span class=\"source ts\"><span>&nbsp;</span></span></div><div class=\"line\"><span class=\"source ts\"><span class=\"comment line double-slash ts\"><span class=\"punctuation definition comment ts\"><span>//</span></span><span>&nbsp;functions&nbsp;(and&nbsp;function&nbsp;variables)</span></span></span></div><div class=\"line\"><span class=\"source ts\"><span class=\"meta function ts\"><span class=\"storage type function ts\"><span>function</span></span><span>&nbsp;</span><span class=\"meta definition function ts entity name function ts\"><span>funcName</span></span><span class=\"meta parameters ts\"><span class=\"punctuation definition parameters begin ts\"><span>(</span></span><span class=\"variable parameter ts\"><span>arg1</span></span><span class=\"meta type annotation ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"entity name type ts\"><span>argType</span></span></span><span class=\"punctuation separator parameter ts\"><span>,</span></span><span>&nbsp;</span><span class=\"variable parameter ts\"><span>arg2</span></span><span class=\"meta type annotation ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"entity name type ts\"><span>argType</span></span></span><span class=\"punctuation definition parameters end ts\"><span>)</span></span></span><span class=\"meta return type ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"entity name type ts\"><span>returnType</span></span><span>&nbsp;</span></span><span class=\"meta block ts\"><span class=\"punctuation definition block ts\"><span>{</span><span>}</span></span></span></span></span></div><div class=\"line\"><span class=\"source ts\"><span class=\"meta var expr ts\"><span class=\"storage type ts\"><span>const</span></span><span>&nbsp;</span><span class=\"meta var-single-variable expr ts\"><span class=\"meta definition variable ts entity name function ts\"><span>funcName</span></span><span class=\"meta type annotation ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"meta type function ts\"><span class=\"meta parameters ts\"><span class=\"punctuation definition parameters begin ts\"><span>(</span></span><span class=\"variable parameter ts\"><span>arg1</span></span><span class=\"meta type annotation ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"entity name type ts\"><span>argType</span></span></span><span class=\"punctuation definition parameters end ts\"><span>)</span></span></span></span><span>&nbsp;</span><span class=\"meta type function return ts\"><span class=\"storage type function arrow ts\"><span>=&gt;</span></span><span>&nbsp;</span><span class=\"entity name type ts\"><span>returnType</span></span></span></span></span></span><span class=\"punctuation terminator statement ts\"><span>;</span></span></span></div><div class=\"line\"><span class=\"source ts\"><span class=\"meta function ts\"><span class=\"storage type function ts\"><span>function</span></span><span>&nbsp;</span><span class=\"meta definition function ts entity name function ts\"><span>split</span></span><span class=\"meta parameters ts\"><span class=\"punctuation definition parameters begin ts\"><span>(</span></span><span class=\"variable parameter ts\"><span>str</span></span><span class=\"meta type annotation ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"support type primitive ts\"><span>string</span></span></span><span class=\"punctuation separator parameter ts\"><span>,</span></span><span>&nbsp;</span><span class=\"variable parameter ts\"><span>delim</span></span><span class=\"meta type annotation ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"support type primitive ts\"><span>string</span></span></span><span class=\"punctuation definition parameters end ts\"><span>)</span></span></span><span class=\"meta return type ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"support type primitive ts\"><span>string</span></span><span class=\"meta type tuple ts\"><span class=\"meta brace square ts\"><span>[</span><span>]</span></span></span><span>&nbsp;</span></span><span class=\"meta block ts\"><span class=\"punctuation definition block ts\"><span>{</span><span>}</span></span></span></span></span></div><div class=\"line\"><span class=\"source ts\"><span class=\"meta function ts\"><span class=\"storage type function ts\"><span>function</span></span><span>&nbsp;</span><span class=\"meta definition function ts entity name function ts\"><span>map</span></span><span class=\"meta type parameters ts\"><span class=\"punctuation definition typeparameters begin ts\"><span>&lt;</span></span><span class=\"entity name type ts\"><span>T</span></span><span class=\"punctuation separator comma ts\"><span>,</span></span><span>&nbsp;</span><span class=\"entity name type ts\"><span>U</span></span><span class=\"punctuation definition typeparameters end ts\"><span>&gt;</span></span></span><span class=\"meta parameters ts\"><span class=\"punctuation definition parameters begin ts\"><span>(</span></span><span class=\"variable parameter ts\"><span>array</span></span><span class=\"meta type annotation ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"entity name type ts\"><span>T</span></span><span class=\"meta type tuple ts\"><span class=\"meta brace square ts\"><span>[</span><span>]</span></span></span></span><span class=\"punctuation separator parameter ts\"><span>,</span></span><span>&nbsp;</span><span class=\"entity name function ts\"><span>iterator</span></span><span class=\"meta type annotation ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"meta type function ts\"><span class=\"meta parameters ts\"><span class=\"punctuation definition parameters begin ts\"><span>(</span></span><span class=\"variable parameter ts\"><span>item</span></span><span class=\"meta type annotation ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"entity name type ts\"><span>T</span></span></span><span class=\"punctuation separator parameter ts\"><span>,</span></span><span>&nbsp;</span><span class=\"variable parameter ts\"><span>index</span></span><span class=\"meta type annotation ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"support type primitive ts\"><span>number</span></span></span><span class=\"punctuation definition parameters end ts\"><span>)</span></span></span></span><span>&nbsp;</span><span class=\"meta type function return ts\"><span class=\"storage type function arrow ts\"><span>=&gt;</span></span><span>&nbsp;</span><span class=\"entity name type ts\"><span>U</span></span></span></span><span class=\"punctuation definition parameters end ts\"><span>)</span></span></span><span class=\"meta return type ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"entity name type ts\"><span>U</span></span><span class=\"meta type tuple ts\"><span class=\"meta brace square ts\"><span>[</span><span>]</span></span></span></span></span><span class=\"punctuation terminator statement ts\"><span>;</span></span></span></div><div class=\"line\"><span class=\"source ts\"><span>&nbsp;</span></span></div><div class=\"line\"><span class=\"source ts\"><span class=\"comment line double-slash ts\"><span class=\"punctuation definition comment ts\"><span>//</span></span><span>&nbsp;interfaces&nbsp;describe&nbsp;plain&nbsp;objects</span></span></span></div><div class=\"line\"><span class=\"source ts\"><span class=\"comment line double-slash ts\"><span class=\"punctuation definition comment ts\"><span>//</span></span><span>&nbsp;(we&nbsp;use&nbsp;the&nbsp;convention&nbsp;that&nbsp;interfaces&nbsp;begin&nbsp;with&nbsp;&quot;I&quot;)</span></span></span></div><div class=\"line\"><span class=\"source ts\"><span class=\"meta interface ts\"><span class=\"storage type interface ts\"><span>interface</span></span><span>&nbsp;</span><span class=\"entity name type interface ts\"><span>IOption</span></span><span>&nbsp;</span><span class=\"punctuation definition block ts\"><span>{</span></span></span></span></div><div class=\"line\"><span class=\"source ts\"><span class=\"meta interface ts\"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class=\"meta field declaration ts\"><span class=\"meta definition property ts variable object property ts\"><span>label</span></span><span class=\"meta type annotation ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"support type primitive ts\"><span>string</span></span></span></span><span class=\"punctuation terminator statement ts\"><span>;</span></span></span></span></div><div class=\"line\"><span class=\"source ts\"><span class=\"meta interface ts\"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class=\"meta field declaration ts\"><span class=\"meta definition property ts variable object property ts\"><span>value</span></span><span class=\"meta type annotation ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"support type primitive ts\"><span>string</span></span></span></span><span class=\"punctuation terminator statement ts\"><span>;</span></span></span></span></div><div class=\"line\"><span class=\"source ts\"><span class=\"meta interface ts\"><span class=\"punctuation definition block ts\"><span>}</span></span></span></span></div><div class=\"line\"><span class=\"source ts\"><span class=\"meta var expr ts\"><span class=\"storage type ts\"><span>const</span></span><span>&nbsp;</span><span class=\"meta var-single-variable expr ts\"><span class=\"meta definition variable ts variable other readwrite ts\"><span>option</span></span><span class=\"meta type annotation ts\"><span class=\"keyword operator type annotation ts\"><span>:</span></span><span>&nbsp;</span><span class=\"entity name type ts\"><span>IOption</span></span><span>&nbsp;</span></span></span><span class=\"keyword operator assignment ts\"><span>=</span></span><span>&nbsp;</span><span class=\"meta objectliteral ts\"><span class=\"punctuation definition block ts\"><span>{</span></span><span>&nbsp;</span><span class=\"meta object member ts\"><span class=\"meta object-literal key ts\"><span>label</span></span><span class=\"meta object-literal key ts punctuation separator key-value ts\"><span>:</span></span><span>&nbsp;</span><span class=\"string quoted double ts\"><span class=\"punctuation definition string begin ts\"><span>&quot;</span></span><span>Name</span><span class=\"punctuation definition string end ts\"><span>&quot;</span></span></span></span><span class=\"punctuation separator comma ts\"><span>,</span></span><span>&nbsp;</span><span class=\"meta object member ts\"><span class=\"meta object-literal key ts\"><span>value</span></span><span class=\"meta object-literal key ts punctuation separator key-value ts\"><span>:</span></span><span>&nbsp;</span><span class=\"string quoted double ts\"><span class=\"punctuation definition string begin ts\"><span>&quot;</span></span><span>Gilad</span><span class=\"punctuation definition string end ts\"><span>&quot;</span></span></span><span>&nbsp;</span></span><span class=\"punctuation definition block ts\"><span>}</span></span></span></span><span class=\"punctuation terminator statement ts\"><span>;</span></span></span></div></pre><p><strong>You do not need to use TypeScript to consume Blueprint</strong> (but major &quot;props&quot; if you do).\nSimply ignoring the type annotations (any italics in code blocks) will produce valid ES2015 code.\nFamiliarity with the syntax is suggested so you can follow our examples source code.</p>\n<div class=\"bp3-callout bp3-intent-primary bp3-icon-info-sign\">\n  For more information, see the TypeScript Handbook for <a href=\"https://www.typescriptlang.org/docs/handbook/basic-types.html\">basic types</a>\n  and <a href=\"https://www.typescriptlang.org/docs/handbook/declaration-files/consumption.html\">consuming declaration files</a>.\n</div>\n\n"
-      ],
-      "contentsRaw": "@# Reading the documentation\n\n@## Understanding TypeScript\n\nBlueprint is written in [TypeScript](https://www.typescriptlang.org/), a statically typed superset\nof JavaScript that compiles to plain JavaScript. All the code samples throughout this site and\nall interactive examples are also written in TypeScript. TypeScript code looks exactly like ES2015+\ncode with the addition of type signatures, which typically appear after colons and are _italicized_\nin our syntax theme.\n\n```ts\n// variables\nconst variableName: varType;\nconst name: string;\nconst disabled: boolean;\n\n// functions (and function variables)\nfunction funcName(arg1: argType, arg2: argType): returnType {}\nconst funcName: (arg1: argType) => returnType;\nfunction split(str: string, delim: string): string[] {}\nfunction map<T, U>(array: T[], iterator: (item: T, index: number) => U): U[];\n\n// interfaces describe plain objects\n// (we use the convention that interfaces begin with \"I\")\ninterface IOption {\n    label: string;\n    value: string;\n}\nconst option: IOption = { label: \"Name\", value: \"Gilad\" };\n```\n\n**You do not need to use TypeScript to consume Blueprint** (but major \"props\" if you do).\nSimply ignoring the type annotations (any italics in code blocks) will produce valid ES2015 code.\nFamiliarity with the syntax is suggested so you can follow our examples source code.\n\n<div class=\"bp3-callout bp3-intent-primary bp3-icon-info-sign\">\n  For more information, see the TypeScript Handbook for [basic types][basic-types]\n  and [consuming declaration files][decl-files].\n</div>\n\n[basic-types]: https://www.typescriptlang.org/docs/handbook/basic-types.html\n[decl-files]: https://www.typescriptlang.org/docs/handbook/declaration-files/consumption.html",
-      "metadata": {}
-    },
-    "resources": {
-      "reference": "resources",
-      "route": "resources",
-      "sourcePath": "src\\resources.md",
-      "title": "Resources",
-      "contents": [
-        {
-          "tag": "heading",
-          "value": "Resources",
-          "level": 1,
-          "route": ""
-        },
-        {
-          "tag": "heading",
-          "value": "Sketch assets",
-          "level": 2,
-          "route": ""
-        },
-        {
-          "tag": "reactDocs",
-          "value": "Resources"
-        }
-      ],
-      "contentsRaw": "@# Resources\n\n@## Sketch assets\n\n@reactDocs Resources",
-      "metadata": {}
-    },
-    "whats-new-2.0": {
-      "reference": "whats-new-2.0",
-      "route": "blueprint/whats-new-2.0",
-      "sourcePath": "src\\whats-new-2.0.md",
-      "title": "What's new in 2.0",
-      "contents": [
-        {
-          "tag": "heading",
-          "value": "What's new in 2.0",
-          "level": 1,
-          "route": "blueprint/whats-new-2.0"
-        },
-        "<p>Blueprint 2.0 features JavaScript API refactors, smaller &amp; more modular packages, and very few changes to the CSS API.</p>\n<h3 id=\"highlights\">Highlights</h3>\n<ul>\n<li>The minimum version of React is now 16.2.</li>\n<li>The minimum version of TypeScript for the declaration files is now 2.3.</li>\n<li><code>Portal</code> now uses React 16&#39;s built-in Portal functionality instead of <code>ReactDOM.unstable_renderSubtreeIntoContainer</code>.</li>\n<li><code>Icon</code> now renders SVG elements and is used in all Blueprint components.<ul>\n<li>This also means that you can <em>provide your own SVG icons for all components</em>.</li>\n<li>Support for the icon font remains, but will be removed in the next major version.</li>\n</ul>\n</li>\n<li>Icon styles and fonts have moved to a new <strong>@blueprintjs/icons</strong> package<ul>\n<li>Core depends on this package, so you will have to import its CSS alongside <code>blueprint.css</code></li>\n</ul>\n</li>\n<li><code>Popover2</code> is now the default <code>Popover</code>. It uses <a href=\"https://popper.js.org/\">Popper.js</a> instead of <a href=\"http://tether.io/\">Tether</a>, which provides much better auto-positioning capabilities and solves a number of outstanding bugs out-of-the-box.</li>\n<li>All Labs components (in <code>@blueprintjs/labs</code>) have been moved into separate packages so that you no longer have to deal with the <code>0.x</code> version range for many components that are used widely in production.</li>\n</ul>\n<p><a class=\"bp3-button bp3-intent-primary\" href=\"https://github.com/palantir/blueprint/wiki/What's-new-in-Blueprint-2.0\" target=\"_blank\" style=\"margin-top: 30px;\">\n    View the full changelog on the wiki\n</a></p>\n"
-      ],
-      "contentsRaw": "@# What's new in 2.0\n\nBlueprint 2.0 features JavaScript API refactors, smaller & more modular packages, and very few changes to the CSS API.\n\n### Highlights\n\n- The minimum version of React is now 16.2.\n- The minimum version of TypeScript for the declaration files is now 2.3.\n- `Portal` now uses React 16's built-in Portal functionality instead of `ReactDOM.unstable_renderSubtreeIntoContainer`.\n- `Icon` now renders SVG elements and is used in all Blueprint components.\n    - This also means that you can _provide your own SVG icons for all components_.\n    - Support for the icon font remains, but will be removed in the next major version.\n- Icon styles and fonts have moved to a new **@blueprintjs/icons** package\n    - Core depends on this package, so you will have to import its CSS alongside `blueprint.css`\n- `Popover2` is now the default `Popover`. It uses [Popper.js](https://popper.js.org/) instead of [Tether](http://tether.io/), which provides much better auto-positioning capabilities and solves a number of outstanding bugs out-of-the-box.\n- All Labs components (in `@blueprintjs/labs`) have been moved into separate packages so that you no longer have to deal with the `0.x` version range for many components that are used widely in production.\n\n<a class=\"bp3-button bp3-intent-primary\" href=\"https://github.com/palantir/blueprint/wiki/What's-new-in-Blueprint-2.0\" target=\"_blank\" style=\"margin-top: 30px;\">\n    View the full changelog on the wiki\n</a>",
-      "metadata": {}
-    },
-    "whats-new-3.0": {
-      "reference": "whats-new-3.0",
-      "route": "blueprint/whats-new-3.0",
-      "sourcePath": "src\\whats-new-3.0.md",
-      "title": "What's new in 3.0",
-      "contents": [
-        {
-          "tag": "heading",
-          "value": "What's new in 3.0",
-          "level": 1,
-          "route": "blueprint/whats-new-3.0"
-        },
-        "<p>Blueprint 3.0 supports multiple major versions of Blueprint on the same page through removing global styles and deconflicting selectors by changing the namespace. It also restores support for React 15 in most packages.</p>\n<h3 id=\"highlights\">Highlights</h3>\n<ul>\n<li>The minimum version of React is back to 15.3 or 16.<ul>\n<li><code>Portal</code> will use React 16&#39;s <code>React.createPortal</code> if available and fall back to <code>ReactDOM.unstable_renderSubtreeIntoContainer</code>.</li>\n</ul>\n</li>\n<li>Change CSS namespace to <code>bp3-</code> to avoid conflicts with previous major versions.</li>\n<li>Move styles attached to global selectors to their own CSS classes.<ul>\n<li>Affects <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>, <code>&lt;blockquote&gt;</code>, <code>&lt;code&gt;</code>, <code>&lt;pre&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;hr&gt;</code>, <code>&lt;table&gt;</code></li>\n<li>The above elements do not require classes when used inside a container element with <code>Classes.RUNNING_TEXT</code>.</li>\n</ul>\n</li>\n<li>Allow string literals for enums! <code>&lt;Button intent=&quot;success&quot; /&gt;</code></li>\n<li>Many new components! Look for the <span class=\"bp3-tag bp3-intent-success bp3-minimal\">new</span> tag in the sidebar.</li>\n<li>Complete refactor of documentation content to focus on React usage and de-emphasize CSS/HTML usage.</li>\n</ul>\n<p><a class=\"bp3-button bp3-intent-primary\" href=\"https://github.com/palantir/blueprint/wiki/3.0-Changelog\" target=\"_blank\" style=\"margin-top: 30px;\">\n    View the full changelog on the wiki\n</a></p>\n"
-      ],
-      "contentsRaw": "\n@# What's new in 3.0\n\nBlueprint 3.0 supports multiple major versions of Blueprint on the same page through removing global styles and deconflicting selectors by changing the namespace. It also restores support for React 15 in most packages.\n\n### Highlights\n\n- The minimum version of React is back to 15.3 or 16.\n    - `Portal` will use React 16's `React.createPortal` if available and fall back to `ReactDOM.unstable_renderSubtreeIntoContainer`.\n- Change CSS namespace to `bp3-` to avoid conflicts with previous major versions.\n- Move styles attached to global selectors to their own CSS classes.\n    - Affects `<h1>`-`<h6>`, `<blockquote>`, `<code>`, `<pre>`, `<ol>`, `<ul>`, `<hr>`, `<table>`\n    - The above elements do not require classes when used inside a container element with `Classes.RUNNING_TEXT`.\n- Allow string literals for enums! `<Button intent=\"success\" />`\n- Many new components! Look for the <span class=\"bp3-tag bp3-intent-success bp3-minimal\">new</span> tag in the sidebar.\n- Complete refactor of documentation content to focus on React usage and de-emphasize CSS/HTML usage.\n\n<a class=\"bp3-button bp3-intent-primary\" href=\"https://github.com/palantir/blueprint/wiki/3.0-Changelog\" target=\"_blank\" style=\"margin-top: 30px;\">\n    View the full changelog on the wiki\n</a>",
-      "metadata": {
-        "tag": "new"
-      }
     }
   },
   "typescript": {
@@ -5413,6 +5289,7 @@
       },
       "kind": "interface",
       "name": "IIntentSelectProps",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/core-examples/common/intentSelect.tsx#L28",
       "methods": [],
       "properties": [
         {
@@ -5429,6 +5306,7 @@
           },
           "kind": "property",
           "name": "inline",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/core-examples/common/intentSelect.tsx#L29",
           "type": "boolean"
         },
         {
@@ -5445,6 +5323,7 @@
           },
           "kind": "property",
           "name": "intent",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/core-examples/common/intentSelect.tsx#L30",
           "type": "Intent"
         },
         {
@@ -5461,6 +5340,7 @@
           },
           "kind": "property",
           "name": "onChange",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/core-examples/common/intentSelect.tsx#L31",
           "type": "React.FormEventHandler<HTMLSelectElement>"
         }
       ]
@@ -5479,6 +5359,7 @@
       },
       "kind": "interface",
       "name": "IFormatSelectProps",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/datetime-examples/common/formatSelect.tsx#L23",
       "methods": [],
       "properties": [
         {
@@ -5502,6 +5383,7 @@
           },
           "kind": "property",
           "name": "format",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/datetime-examples/common/formatSelect.tsx#L25",
           "type": "IDateFormatProps"
         },
         {
@@ -5525,6 +5407,7 @@
           },
           "kind": "property",
           "name": "onChange",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/datetime-examples/common/formatSelect.tsx#L28",
           "type": "(format: IDateFormatProps) => void"
         }
       ]
@@ -5543,6 +5426,7 @@
       },
       "kind": "interface",
       "name": "IFilm",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/select-examples/films.tsx#L21",
       "methods": [],
       "properties": [
         {
@@ -5566,6 +5450,7 @@
           },
           "kind": "property",
           "name": "rank",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/select-examples/films.tsx#L27",
           "type": "number"
         },
         {
@@ -5589,6 +5474,7 @@
           },
           "kind": "property",
           "name": "title",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/select-examples/films.tsx#L23",
           "type": "string"
         },
         {
@@ -5612,6 +5498,7 @@
           },
           "kind": "property",
           "name": "year",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/select-examples/films.tsx#L25",
           "type": "number"
         }
       ]
@@ -5630,6 +5517,7 @@
       },
       "kind": "interface",
       "name": "ISortableColumn",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/table-examples/tableSortableExample.tsx#L40",
       "methods": [
         {
           "fileName": "examples\\table-examples\\tableSortableExample.tsx",
@@ -5645,11 +5533,13 @@
           },
           "kind": "method",
           "name": "getColumn",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/table-examples/tableSortableExample.tsx#L41",
           "signatures": [
             {
               "fileName": "examples\\table-examples\\tableSortableExample.tsx",
               "kind": "signature",
               "name": "getColumn",
+              "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/table-examples/tableSortableExample.tsx#L41",
               "parameters": [
                 {
                   "flags": {
@@ -5704,6 +5594,7 @@
       },
       "kind": "interface",
       "name": "ICustomTimezonePickerTargetProps",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/timezone-examples/components/customTimezoneTarget.tsx#L22",
       "methods": [],
       "properties": [
         {
@@ -5720,6 +5611,7 @@
           },
           "kind": "property",
           "name": "timezone",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/timezone-examples/components/customTimezoneTarget.tsx#L23",
           "type": "string"
         }
       ]
@@ -5738,6 +5630,7 @@
       },
       "kind": "interface",
       "name": "INavHeaderProps",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/navHeader.tsx#L34",
       "methods": [],
       "properties": [
         {
@@ -5754,6 +5647,7 @@
           },
           "kind": "property",
           "name": "onToggleDark",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/navHeader.tsx#L35",
           "type": "(useDark: boolean) => void"
         },
         {
@@ -5770,6 +5664,7 @@
           },
           "kind": "property",
           "name": "packageData",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/navHeader.tsx#L38",
           "type": "INpmPackage"
         },
         {
@@ -5786,6 +5681,7 @@
           },
           "kind": "property",
           "name": "useDarkTheme",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/navHeader.tsx#L36",
           "type": "boolean"
         },
         {
@@ -5802,6 +5698,7 @@
           },
           "kind": "property",
           "name": "useNextVersion",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/navHeader.tsx#L37",
           "type": "boolean"
         }
       ]
@@ -5820,6 +5717,7 @@
       },
       "kind": "interface",
       "name": "IBlueprintDocsProps",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/blueprintDocs.tsx#L47",
       "methods": [],
       "properties": [
         {
@@ -5836,6 +5734,7 @@
           },
           "kind": "property",
           "name": "defaultPageId",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/blueprintDocs.tsx#L49",
           "type": "string"
         },
         {
@@ -5852,6 +5751,7 @@
           },
           "kind": "property",
           "name": "docs",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/blueprintDocs.tsx#L48",
           "type": "IDocsCompleteData"
         },
         {
@@ -5868,6 +5768,7 @@
           },
           "kind": "property",
           "name": "tagRenderers",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/blueprintDocs.tsx#L50",
           "type": "ITagRendererMap"
         },
         {
@@ -5891,6 +5792,7 @@
           },
           "kind": "property",
           "name": "useNextVersion",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/blueprintDocs.tsx#L52",
           "type": "boolean"
         }
       ]
@@ -5916,6 +5818,7 @@
       },
       "kind": "interface",
       "name": "IBlueprintExampleData",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/tags/reactExamples.ts#L27",
       "methods": [],
       "properties": [
         {
@@ -5939,6 +5842,7 @@
           },
           "kind": "property",
           "name": "themeName",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/tags/reactExamples.ts#L29",
           "type": "string"
         }
       ]
@@ -5957,6 +5861,7 @@
       },
       "kind": "interface",
       "name": "IPrecisionSelectProps",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/datetime-examples/common/precisionSelect.tsx#L22",
       "methods": [],
       "properties": [
         {
@@ -5980,6 +5885,7 @@
           },
           "kind": "property",
           "name": "allowNone",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/datetime-examples/common/precisionSelect.tsx#L36",
           "type": "boolean"
         },
         {
@@ -6003,6 +5909,7 @@
           },
           "kind": "property",
           "name": "label",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/datetime-examples/common/precisionSelect.tsx#L42",
           "defaultValue": "\"Precision\"",
           "type": "string"
         },
@@ -6027,6 +5934,7 @@
           },
           "kind": "property",
           "name": "onChange",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/datetime-examples/common/precisionSelect.tsx#L31",
           "type": "(event: FormEvent<HTMLElement>) => void"
         },
         {
@@ -6050,6 +5958,7 @@
           },
           "kind": "property",
           "name": "value",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/datetime-examples/common/precisionSelect.tsx#L26",
           "type": "TimePrecision | \"none\" | undefined"
         }
       ]
@@ -6068,6 +5977,7 @@
       },
       "kind": "interface",
       "name": "IAlignSelectProps",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/core-examples/common/alignmentSelect.tsx#L20",
       "methods": [],
       "properties": [
         {
@@ -6084,6 +5994,7 @@
           },
           "kind": "property",
           "name": "align",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/core-examples/common/alignmentSelect.tsx#L21",
           "type": "Alignment | undefined"
         },
         {
@@ -6100,6 +6011,7 @@
           },
           "kind": "property",
           "name": "allowCenter",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/core-examples/common/alignmentSelect.tsx#L22",
           "type": "boolean"
         },
         {
@@ -6116,6 +6028,7 @@
           },
           "kind": "property",
           "name": "label",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/core-examples/common/alignmentSelect.tsx#L23",
           "type": "string"
         },
         {
@@ -6132,6 +6045,7 @@
           },
           "kind": "property",
           "name": "onChange",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/core-examples/common/alignmentSelect.tsx#L24",
           "type": "(align: Alignment) => void"
         }
       ]
@@ -6150,6 +6064,7 @@
       },
       "kind": "interface",
       "name": "IFileMenuProps",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/core-examples/common/fileMenu.tsx#L20",
       "extends": [
         "IProps"
       ],
@@ -6193,6 +6108,7 @@
           },
           "kind": "property",
           "name": "shouldDismissPopover",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/core-examples/common/fileMenu.tsx#L21",
           "type": "boolean"
         }
       ]
@@ -6211,6 +6127,7 @@
       },
       "kind": "interface",
       "name": "IIconSelectProps",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/core-examples/common/iconSelect.tsx#L22",
       "methods": [],
       "properties": [
         {
@@ -6227,6 +6144,7 @@
           },
           "kind": "property",
           "name": "iconName",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/core-examples/common/iconSelect.tsx#L23",
           "type": "IconName"
         },
         {
@@ -6243,6 +6161,7 @@
           },
           "kind": "property",
           "name": "onChange",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/core-examples/common/iconSelect.tsx#L24",
           "type": "(iconName?: IconName) => void"
         }
       ]
@@ -6261,6 +6180,7 @@
       },
       "kind": "interface",
       "name": "IClickToCopyProps",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/clickToCopy.tsx#L23",
       "extends": [
         "IProps",
         "HTMLAttributes"
@@ -7715,6 +7635,7 @@
           },
           "kind": "property",
           "name": "copiedClassName",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/clickToCopy.tsx#L28",
           "defaultValue": "\"docs-clipboard-copied\"",
           "type": "string"
         },
@@ -11037,6 +10958,7 @@
           },
           "kind": "property",
           "name": "value",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/clickToCopy.tsx#L31",
           "type": "string"
         },
         {
@@ -11072,6 +10994,7 @@
       },
       "kind": "interface",
       "name": "IColorSchemeProps",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/colorSchemes.tsx#L74",
       "methods": [],
       "properties": [
         {
@@ -11088,6 +11011,7 @@
           },
           "kind": "property",
           "name": "schemes",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/colorSchemes.tsx#L75",
           "type": "Array<>"
         },
         {
@@ -11104,6 +11028,7 @@
           },
           "kind": "property",
           "name": "steps",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/colorSchemes.tsx#L76",
           "type": "number"
         }
       ]
@@ -11122,6 +11047,7 @@
       },
       "kind": "interface",
       "name": "IDocsIconProps",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/docsIcon.tsx#L23",
       "methods": [],
       "properties": [
         {
@@ -11138,6 +11064,7 @@
           },
           "kind": "property",
           "name": "displayName",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/docsIcon.tsx#L24",
           "type": "string"
         },
         {
@@ -11154,6 +11081,7 @@
           },
           "kind": "property",
           "name": "group",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/docsIcon.tsx#L25",
           "type": "string"
         },
         {
@@ -11170,6 +11098,7 @@
           },
           "kind": "property",
           "name": "iconName",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/docsIcon.tsx#L26",
           "type": "IconName"
         },
         {
@@ -11186,6 +11115,7 @@
           },
           "kind": "property",
           "name": "tags",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/docsIcon.tsx#L27",
           "type": "string"
         }
       ]
@@ -11204,6 +11134,7 @@
       },
       "kind": "interface",
       "name": "IIconsProps",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/icons.tsx#L28",
       "methods": [],
       "properties": [
         {
@@ -11220,6 +11151,7 @@
           },
           "kind": "property",
           "name": "iconFilter",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/icons.tsx#L29",
           "type": "(query: string, icon: IIcon) => boolean"
         },
         {
@@ -11236,6 +11168,7 @@
           },
           "kind": "property",
           "name": "iconRenderer",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/icons.tsx#L30",
           "type": "(icon: IIcon, index: number) => Element"
         },
         {
@@ -11252,6 +11185,7 @@
           },
           "kind": "property",
           "name": "icons",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/components/icons.tsx#L31",
           "type": "IIcon[]"
         }
       ]
@@ -11270,6 +11204,7 @@
       },
       "kind": "type alias",
       "name": "ICellLookup",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/table-examples/tableSortableExample.tsx#L37",
       "type": "(rowIndex: number, columnIndex: number) => any"
     },
     "ISortCallback": {
@@ -11286,6 +11221,7 @@
       },
       "kind": "type alias",
       "name": "ISortCallback",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/2457943/src/examples/table-examples/tableSortableExample.tsx#L38",
       "type": "(columnIndex: number, comparator: (a: any, b: any) => number) => void"
     }
   },
@@ -12049,5 +11985,6 @@
       ],
       "reference": "ui-text"
     }
-  }
+  },
+  "npm": {}
 }

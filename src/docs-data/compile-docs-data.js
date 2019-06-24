@@ -58,7 +58,7 @@ function generateDocumentalistData() {
             }),
         )
         .use(".scss", new dm.KssPlugin())
-        //.use("package.json", new dm.NpmPlugin())
+        .use("../package.json", new dm.NpmPlugin())
         .documentGlobs("../src/**/*.{scss,md}", "../src/**/index.{ts,tsx}", "../src/**/package.json")
         .then(docs => JSON.stringify(docs, transformDocumentalistData, 2))
         .then(content => fs.writeFileSync(DOCS_DATA_PATH, content));

@@ -160,8 +160,7 @@ export class BlueprintDocs extends React.Component<IBlueprintDocsProps, { themeN
     }
 
     private getNpmPackage(packageName: string) {
-        // FIXME: Uncomment this and enable npm plugin
-        return null; //this.props.docs.npm[packageName];
+        return this.props.docs.npm[packageName];
     }
 
     // This function is called whenever the documentation page changes and should be used to

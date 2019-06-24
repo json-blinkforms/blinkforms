@@ -52,6 +52,3 @@ IE 10 and below are unsupported due to their lack of support for CSS Flexbox Lay
 These browsers were deprecated by Microsoft (end of support) in [January 2016](https://www.microsoft.com/en-us/WindowsForBusiness/End-of-IE-support).
 
 @page getting-started
-@page reading-the-docs
-@page whats-new-2.0
-@page whats-new-3.0
