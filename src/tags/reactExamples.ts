@@ -17,11 +17,7 @@
 import { IExampleMap, IExampleProps } from "@blueprintjs/docs-theme";
 import * as React from "react";
 
-import * as CoreExamples from "../examples/core-examples";
-import * as DateExamples from "../examples/datetime-examples";
-import * as SelectExamples from "../examples/select-examples";
-import * as TableExamples from "../examples/table-examples";
-import * as TimezoneExamples from "../examples/timezone-examples";
+import * as ReactJsonBlinkformExamples from "../../blinkforms/react-json-blinkforms/examples";
 
 /** Interface for `IExampleProps` `data` in this here Blueprint docs-app. */
 export interface IBlueprintExampleData {
@@ -51,10 +47,6 @@ function getPackageExamples(
 
 export const reactExamples: IExampleMap = (() => {
     return {
-        ...getPackageExamples("core", CoreExamples as any),
-        ...getPackageExamples("datetime", DateExamples as any),
-        ...getPackageExamples("select", SelectExamples as any),
-        ...getPackageExamples("table", TableExamples as any),
-        ...getPackageExamples("timezone", TimezoneExamples as any),
+        ...getPackageExamples("react-json-blinkforms", ReactJsonBlinkformExamples as any),
     };
 })();
