@@ -23,8 +23,13 @@ storiesOf('Basic form', module)
                 },
                 "lastName": {
                     type: "string",
+                    ui: "enum",
                     title: "Your last name",
-                    minLength: 3,
+                    enum: [
+                        "Name1",
+                        "Name2",
+                        "Name3",
+                    ],
                 },
                 "notice": {
                     type: "string",
