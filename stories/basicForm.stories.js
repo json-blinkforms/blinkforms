@@ -26,6 +26,11 @@ storiesOf('Basic form', module)
                     title: "Your last name",
                     minLength: 3,
                 },
+                "notice": {
+                    type: "string",
+                    ui: "notice",
+                    value: "Hello!",
+                },
                 "array": {
                     type: "array",
                     ui: "tuple",
