@@ -11,6 +11,15 @@ export const defaultParserConfig: SchemaParserConfig = {
         OBJECT: {
             default: null,
         },
+        NUMBER: {
+            default: null,
+        },
+        BOOLEAN: {
+            default: null,
+        },
+        ARRAY: {
+            default: null,
+        },
     },
     rootState: null,
     rootSetState: () => {},

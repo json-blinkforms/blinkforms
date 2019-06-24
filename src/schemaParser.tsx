@@ -1,4 +1,3 @@
-
 import {
     isNodeErrorPure,
     Node,
@@ -16,7 +15,6 @@ import {
 } from "./schemaTypes";
 
 import Ajv from "ajv";
-
 import { defaultParserConfig } from "./defaultParserConfig";
 
 export interface AjvError {
@@ -39,11 +37,18 @@ function getHandlerForType<M extends NodeSchema>(node: M, config: SchemaParserCo
             return config.handlers.OBJECT;
         case NodeType.STRING:
             return config.handlers.STRING;
+        case NodeType.NUMBER:
+            return config.handlers.NUMBER;
+        case NodeType.BOOLEAN:
+            return config.handlers.BOOLEAN;
+        case NodeType.ARRAY:
+            return config.handlers.ARRAY;
         case NodeType.ROOT:
             return null;
+        default:
+            throw `Unknown node type ${node.type}`;
+            return null;
     }
-    const never: never = t;
-    return never;
 }
 
 function createNode<M extends NodeSchema>(node: M, parentNode: NodeAny, config: SchemaParserConfig, handler: NodeHandler<any, any, M>): Node<any, any, M> {
@@ -97,7 +102,7 @@ export function transformOutputToRawData(metaOutput: any): any {
     if (isNodeMetaOutputValue(metaOutput)) {
         return transformOutputToRawData(metaOutput.__data);
     } else if (Array.isArray(metaOutput)) {
-        metaOutput.map(item => transformOutputToRawData(item));
+        return metaOutput.map(item => transformOutputToRawData(item));
     } else if (metaOutput instanceof Object) {
         const result = {};
         Object.keys(metaOutput).forEach(key => {
@@ -109,14 +114,31 @@ export function transformOutputToRawData(metaOutput: any): any {
     }
 }
 
+function debounce(func: any, wait: number, immediate?: boolean) {
+    let timeout;
+    return function() {
+        const context = this, args = arguments;
+        const later = () => {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        const callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
+}
+
 export async function validateRoot(rootNode: RootNode) {
 
     const ajv = new Ajv({
         allErrors: true,
         ...rootNode.getConfig().ajvOptions,
     });
-    const validateSchema = ajv.compile(rootNode.getSchema() as unknown as object);
-    const output = rootNode.getOutput();
+
+    const validateSchema = ajv.compile(rootNode.getJsonSchema() as unknown as object);
+    const output = rootNode.getOutput({ enableFormat: false });
+
     const data = transformOutputToRawData(output);
 
     validateSchema(data);
@@ -162,7 +184,7 @@ export function transformSchemaIntoTree<M extends NodeSchema>(node: M, rootNode:
 
     if (!rootNode) {
         rootNode = new RootNode(
-            node, conf, recTransformSchemaIntoTree, transformOutputToRawData, validateRoot,
+            node, conf, recTransformSchemaIntoTree, transformOutputToRawData, debounce(validateRoot, 750),
         );
         rootNode.resolve();
     }
