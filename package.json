@@ -4,16 +4,8 @@
   "description": "Blueprint Documentation Site",
   "private": true,
   "scripts": {
-    "bundle": "webpack --config ./webpack.config.js",
-    "clean": "rm -rf dist/*",
-    "dev": "webpack-dev-server --config ./webpack.config.js --host 0.0.0.0",
-    "dist": "cross-env NODE_ENV=production yarn bundle",
-    "lint": "run-p lint:scss lint:ts",
-    "lint:scss": "sass-lint",
-    "lint:ts": "ts-lint",
-    "lint-fix": "ts-lint --fix",
-    "test": "exit 0",
-    "verify": "run-p dist lint"
+    "dev": "node ./node_modules/ts-node/dist/bin.js ./node_modules/gulp/bin/gulp.js dev",
+    "build": "node ./node_modules/ts-node/dist/bin.js ./node_modules/gulp/bin/gulp.js build"
   },
   "dependencies": {
     "@babel/core": "^7.4.5",
@@ -33,6 +25,7 @@
     "@types/downloadjs": "^1.4.0",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.6",
+    "babel-preset-minify": "^0.5.0",
     "chroma-js": "^1.3.4",
     "classnames": "^2.2.5",
     "documentalist": "^1.6.0",
@@ -48,14 +41,18 @@
     "tslib": "^1.9.0"
   },
   "devDependencies": {
+    "@babel/register": "^7.4.4",
     "@blueprintjs/node-build-scripts": "*",
     "@blueprintjs/webpack-build-scripts": "*",
     "@types/chroma-js": "^1.3.3",
     "@types/react": "^16.8.22",
     "@types/react-dom": "^16.8.4",
     "copy-webpack-plugin": "^5.0.3",
+    "gulp": "^4.0.2",
+    "gulp-run-command": "0.0.9",
     "npm-run-all": "^4.1.2",
     "styled-components": "^4.3.2",
+    "ts-node": "^8.3.0",
     "typescript": "^3.2.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.0"

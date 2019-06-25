@@ -103,7 +103,7 @@
       "level": 1,
       "reference": "react-json-blinkforms",
       "route": "react-json-blinkforms",
-      "title": "React-json-blinkforms"
+      "title": "React"
     }
   ],
   "pages": {
@@ -233,12 +233,12 @@
     "react-json-blinkforms": {
       "reference": "react-json-blinkforms",
       "route": "react-json-blinkforms",
-      "sourcePath": "react-json-blinkforms\\src\\index.md",
-      "title": "React-json-blinkforms",
+      "sourcePath": "react-json-blinkforms\\examples\\index.md",
+      "title": "React",
       "contents": [
         {
           "tag": "heading",
-          "value": "React-json-blinkforms",
+          "value": "React",
           "level": 1,
           "route": "react-json-blinkforms"
         },
@@ -248,7 +248,7 @@
           "value": "renderers"
         }
       ],
-      "contentsRaw": "\n@# React-json-blinkforms\n\nComponents elo\n\n@page renderers",
+      "contentsRaw": "\n@# React\n\nComponents elo\n\n@page renderers",
       "metadata": {
         "reference": "react-json-blinkforms"
       }
@@ -346,9 +346,140 @@
       ],
       "contentsRaw": "@# Components\n\n<!-- Exact ordering of components in the navbar: -->\n@page ArrayDefault",
       "metadata": {}
+    },
+    "README": {
+      "reference": "README",
+      "route": "README",
+      "sourcePath": "typescript-core\\README.md",
+      "title": "(untitled)",
+      "contents": [
+        "<h1 id=\"typescript-core\">typescript-core</h1>\n<p>Typescript client-side core of Blinkforms</p>\n"
+      ],
+      "contentsRaw": "# typescript-core\nTypescript client-side core of Blinkforms",
+      "metadata": {}
     }
   },
   "typescript": {
+    "NodeType": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "enum",
+      "name": "NodeType",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L5",
+      "members": [
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "enum member",
+          "name": "ARRAY",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L10",
+          "defaultValue": "\"array\""
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "enum member",
+          "name": "BOOLEAN",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L8",
+          "defaultValue": "\"boolean\""
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "enum member",
+          "name": "NUMBER",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L7",
+          "defaultValue": "\"number\""
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "enum member",
+          "name": "OBJECT",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L9",
+          "defaultValue": "\"object\""
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "enum member",
+          "name": "ROOT",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L11",
+          "defaultValue": "\"root\""
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "enum member",
+          "name": "STRING",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L6",
+          "defaultValue": "\"string\""
+        }
+      ]
+    },
     "LayoutMode": {
       "fileName": "..\\blinkforms\\react-json-blinkforms\\src\\renderers\\utils\\WithDescription.tsx",
       "flags": {
@@ -395,6 +526,1518 @@
           "kind": "enum member",
           "name": "NORMAL",
           "defaultValue": "\"normal\""
+        }
+      ]
+    },
+    "FormContext": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "FormContext",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L367",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "errors",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L368",
+          "type": "Array<NodeError>"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "getErrorsForNode",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L369",
+          "type": "(node: NodeAny) => Array<NodeError>"
+        }
+      ]
+    },
+    "NodeTypeSchemas": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "NodeTypeSchemas",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L14",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "ARRAY",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L19",
+          "type": "NodeArraySchema"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "BOOLEAN",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L17",
+          "type": "NodeBooleanSchema"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "NUMBER",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L16",
+          "type": "NodeNumberSchema"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "OBJECT",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L18",
+          "type": "NodeObjectSchema"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "ROOT",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L20",
+          "type": "any"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "STRING",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L15",
+          "type": "NodeStringSchema"
+        }
+      ]
+    },
+    "NodeObjectSchema": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "NodeObjectSchema",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L36",
+      "extends": [
+        "{ [key: string]: any }"
+      ],
+      "indexSignature": {
+        "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L26",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": false,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "description",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L25",
+          "inheritedFrom": "__type.description",
+          "type": "string"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "formatInput",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L29",
+          "inheritedFrom": "__type.formatInput",
+          "type": "(output: any) => any"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "formatOutput",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L28",
+          "inheritedFrom": "__type.formatOutput",
+          "type": "(output: any) => any"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "properties",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L39",
+          "type": "NodeProperties"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "required",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L38",
+          "type": "Array<string>"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "title",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L24",
+          "inheritedFrom": "__type.title",
+          "type": "string"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "type",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L37",
+          "type": "NodeType.OBJECT"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "ui",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L26",
+          "inheritedFrom": "__type.ui",
+          "type": "string"
+        }
+      ]
+    },
+    "NodeStringSchema": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "NodeStringSchema",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L42",
+      "extends": [
+        "{ [key: string]: any }"
+      ],
+      "indexSignature": {
+        "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L26",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": false,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "description",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L25",
+          "inheritedFrom": "__type.description",
+          "type": "string"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "formatInput",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L29",
+          "inheritedFrom": "__type.formatInput",
+          "type": "(output: any) => any"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "formatOutput",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L28",
+          "inheritedFrom": "__type.formatOutput",
+          "type": "(output: any) => any"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "title",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L24",
+          "inheritedFrom": "__type.title",
+          "type": "string"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "type",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L43",
+          "type": "NodeType.STRING"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "ui",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L26",
+          "inheritedFrom": "__type.ui",
+          "type": "string"
+        }
+      ]
+    },
+    "NodeNumberSchema": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "NodeNumberSchema",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L46",
+      "extends": [
+        "{ [key: string]: any }"
+      ],
+      "indexSignature": {
+        "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L26",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": false,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "description",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L25",
+          "inheritedFrom": "__type.description",
+          "type": "string"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "formatInput",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L29",
+          "inheritedFrom": "__type.formatInput",
+          "type": "(output: any) => any"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "formatOutput",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L28",
+          "inheritedFrom": "__type.formatOutput",
+          "type": "(output: any) => any"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "title",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L24",
+          "inheritedFrom": "__type.title",
+          "type": "string"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "type",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L47",
+          "type": "NodeType.NUMBER"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "ui",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L26",
+          "inheritedFrom": "__type.ui",
+          "type": "string"
+        }
+      ]
+    },
+    "NodeBooleanSchema": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "NodeBooleanSchema",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L50",
+      "extends": [
+        "{ [key: string]: any }"
+      ],
+      "indexSignature": {
+        "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L26",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": false,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "description",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L25",
+          "inheritedFrom": "__type.description",
+          "type": "string"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "formatInput",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L29",
+          "inheritedFrom": "__type.formatInput",
+          "type": "(output: any) => any"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "formatOutput",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L28",
+          "inheritedFrom": "__type.formatOutput",
+          "type": "(output: any) => any"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "title",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L24",
+          "inheritedFrom": "__type.title",
+          "type": "string"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "type",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L51",
+          "type": "NodeType.BOOLEAN"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "ui",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L26",
+          "inheritedFrom": "__type.ui",
+          "type": "string"
+        }
+      ]
+    },
+    "NodeArraySchema": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "NodeArraySchema",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L54",
+      "extends": [
+        "{ [key: string]: any }"
+      ],
+      "indexSignature": {
+        "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L26",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": false,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "any",
+        "type": "{ [key: string]: any }"
+      },
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "description",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L25",
+          "inheritedFrom": "__type.description",
+          "type": "string"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "formatInput",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L29",
+          "inheritedFrom": "__type.formatInput",
+          "type": "(output: any) => any"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "formatOutput",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L28",
+          "inheritedFrom": "__type.formatOutput",
+          "type": "(output: any) => any"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "items",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L56",
+          "type": "Array<NodeBaseSchema> | NodeBaseSchema"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "title",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L24",
+          "inheritedFrom": "__type.title",
+          "type": "string"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "type",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L55",
+          "type": "NodeType.ARRAY"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "ui",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L26",
+          "inheritedFrom": "__type.ui",
+          "type": "string"
+        }
+      ]
+    },
+    "SchemaNodeHandlersMappingForType": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "SchemaNodeHandlersMappingForType",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L357",
+      "indexSignature": {
+        "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L357",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": false,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "NodeHandler<any, any, M>",
+        "type": "{ [key: string]: NodeHandler<any, any, M> }"
+      },
+      "methods": [],
+      "properties": []
+    },
+    "NodeProperties": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "NodeProperties",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L32",
+      "indexSignature": {
+        "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+        "kind": "signature",
+        "name": "__index",
+        "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L32",
+        "parameters": [
+          {
+            "flags": {
+              "isExported": false,
+              "isExternal": false,
+              "isOptional": false,
+              "isPrivate": false,
+              "isProtected": false,
+              "isPublic": false,
+              "isRest": false,
+              "isStatic": false
+            },
+            "kind": "parameter",
+            "name": "key",
+            "type": "string"
+          }
+        ],
+        "returnType": "NodeSchema",
+        "type": "{ [key: string]: NodeSchema }"
+      },
+      "methods": [],
+      "properties": []
+    },
+    "SchemaParserConfig": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "SchemaParserConfig",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L372",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "ajvOptions",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L380",
+          "type": "any"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "handlers",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L373",
+          "type": "SchemaNodeHandlersMapping"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "rootModifyContext",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L377",
+          "type": "(fn: (context: FormContext) => FormContext, source: NodeAny) => void"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "rootSetContext",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L376",
+          "type": "(context: FormContext, source: NodeAny) => void"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "rootSetState",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L375",
+          "type": "(state: NodeState<any>, root: RootNode, originalSource?: NodeAny) => void"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "rootState",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L374",
+          "type": "NodeState<any>"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "uidGenerator",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L378",
+          "type": "() => number"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "uidGeneratorFactory",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L379",
+          "type": "() => () => number"
+        }
+      ]
+    },
+    "SchemaParserConfigOpt": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "SchemaParserConfigOpt",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L383",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "ajvOptions",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L391",
+          "type": "any"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "handlers",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L384",
+          "type": "SchemaNodeHandlersMapping"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "rootModifyContext",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L388",
+          "type": "(fn: (context: FormContext) => FormContext, source: NodeAny) => void"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "rootSetContext",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L387",
+          "type": "(context: FormContext, source: NodeAny) => void"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "rootSetState",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L386",
+          "type": "(state: NodeState<any>, root: NodeAny, originalSource?: NodeAny) => void"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "rootState",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L385",
+          "type": "NodeState<any>"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "uidGenerator",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L389",
+          "type": "() => number"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "uidGeneratorFactory",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L390",
+          "type": "() => () => number"
+        }
+      ]
+    },
+    "AjvError": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaParser.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "interface",
+      "name": "AjvError",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaParser.tsx#L20",
+      "methods": [],
+      "properties": [
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaParser.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "dataPath",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaParser.tsx#L21",
+          "type": "string"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaParser.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "keyword",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaParser.tsx#L22",
+          "type": "string"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaParser.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "message",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaParser.tsx#L23",
+          "type": "string"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaParser.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": true,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "node",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaParser.tsx#L26",
+          "type": "NodeAny"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaParser.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "params",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaParser.tsx#L24",
+          "type": "any"
+        },
+        {
+          "fileName": "..\\blinkforms\\typescript-core\\src\\schemaParser.tsx",
+          "flags": {
+            "isExported": true,
+            "isExternal": true,
+            "isOptional": false,
+            "isPrivate": false,
+            "isProtected": false,
+            "isPublic": false,
+            "isRest": false,
+            "isStatic": false
+          },
+          "kind": "property",
+          "name": "schemaPath",
+          "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaParser.tsx#L25",
+          "type": "string"
         }
       ]
     },
@@ -662,7 +2305,262 @@
         }
       ]
     },
-    "NodeSMapping": {
+    "SchemaTreeResolver": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "type alias",
+      "name": "SchemaTreeResolver",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L405",
+      "type": "(node: M, parentNode: Node<PS, PO, PM>, config: SchemaParserConfig) => Node<any, any, M>"
+    },
+    "NodeBaseSchema": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "type alias",
+      "name": "NodeBaseSchema",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L23",
+      "type": "{ [key: string]: any }"
+    },
+    "Schema": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "type alias",
+      "name": "Schema",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L61",
+      "type": "NodeObjectSchema"
+    },
+    "NodeHandler": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "type alias",
+      "name": "NodeHandler",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L349",
+      "type": ""
+    },
+    "NodeTypeNames": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "type alias",
+      "name": "NodeTypeNames",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L361",
+      "type": "keyof NodeType"
+    },
+    "SchemaNodeHandlersMapping": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "type alias",
+      "name": "SchemaNodeHandlersMapping",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L363",
+      "type": ""
+    },
+    "NodeState": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "type alias",
+      "name": "NodeState",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L394",
+      "type": "S"
+    },
+    "NodeOutputValue": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "type alias",
+      "name": "NodeOutputValue",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L396",
+      "type": "O"
+    },
+    "NodeMetaOutputValue": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "type alias",
+      "name": "NodeMetaOutputValue",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L398",
+      "type": ""
+    },
+    "NodeAny": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "type alias",
+      "name": "NodeAny",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L403",
+      "type": "Node<any, any, any>"
+    },
+    "NodeSchema": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "type alias",
+      "name": "NodeSchema",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L59",
+      "type": "ValueOf<NodeTypeSchemas>"
+    },
+    "NodeError": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\schemaTypes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "type alias",
+      "name": "NodeError",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/schemaTypes.tsx#L427",
+      "type": "NodeErrorAjv | NodeErrorPure"
+    },
+    "BlinkformsStateTransformer": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\BlinkformsClient.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "type alias",
+      "name": "BlinkformsStateTransformer",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/BlinkformsClient.tsx#L9",
+      "type": "(state: NodeState<any>, root: RootNode) => NodeState<any>"
+    },
+    "BlinkformsContextUpdateHandler": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\BlinkformsClient.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "type alias",
+      "name": "BlinkformsContextUpdateHandler",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/BlinkformsClient.tsx#L10",
+      "type": "(context: FormContext, source: NodeAny) => void"
+    },
+    "BlinkformsContextTransformer": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\BlinkformsClient.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "type alias",
+      "name": "BlinkformsContextTransformer",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/BlinkformsClient.tsx#L11",
+      "type": "(fn: (context: FormContext) => FormContext, source: NodeAny) => void"
+    },
+    "NodeS": {
       "fileName": "..\\blinkforms\\react-json-blinkforms\\src\\renderers\\ArrayDefault.tsx",
       "flags": {
         "isExported": true,
@@ -675,8 +2573,8 @@
         "isStatic": false
       },
       "kind": "type alias",
-      "name": "NodeSMapping",
-      "type": "{ [key: string]: NodeState<any> }"
+      "name": "NodeS",
+      "type": ""
     },
     "NodeO": {
       "fileName": "..\\blinkforms\\react-json-blinkforms\\src\\renderers\\ArrayDefault.tsx",
@@ -694,7 +2592,24 @@
       "name": "NodeO",
       "type": "NodeOutputValue<Array<NodeOutputValue<any>>>"
     },
-    "NodeS": {
+    "ChildrenMap": {
+      "fileName": "..\\blinkforms\\typescript-core\\src\\compositeNodes.tsx",
+      "flags": {
+        "isExported": true,
+        "isExternal": true,
+        "isOptional": false,
+        "isPrivate": false,
+        "isProtected": false,
+        "isPublic": false,
+        "isRest": false,
+        "isStatic": false
+      },
+      "kind": "type alias",
+      "name": "ChildrenMap",
+      "sourceUrl": "https://github.com/json-blinkforms/blinkforms-docs/blob/b963ca6/src/compositeNodes.tsx#L20",
+      "type": "{ [key: string]: T }"
+    },
+    "NodeSMapping": {
       "fileName": "..\\blinkforms\\react-json-blinkforms\\src\\renderers\\ArrayDefault.tsx",
       "flags": {
         "isExported": true,
@@ -707,8 +2622,8 @@
         "isStatic": false
       },
       "kind": "type alias",
-      "name": "NodeS",
-      "type": ""
+      "name": "NodeSMapping",
+      "type": "{ [key: string]: NodeState<any> }"
     }
   },
   "css": {},
