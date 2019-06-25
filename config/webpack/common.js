@@ -54,8 +54,8 @@ module.exports = {
   },
   plugins: [
     new CheckerPlugin(),
-    new webpack.NormalModuleReplacementPlugin(/@blinkforms\/core\/.*/, function(resource) {
-        resource.request = resource.request.replace(/@blinkforms\/core/, path.resolve(__dirname, path.join('..', '..', 'typescript-core', 'src')));
+    new webpack.NormalModuleReplacementPlugin(/@blinkforms\/core/, function(resource) {
+        resource.request = resource.request.replace(/@blinkforms\/core/, path.resolve(__dirname, path.join('..', '..', 'typescript-core')));
     }),
   ],
   performance: {

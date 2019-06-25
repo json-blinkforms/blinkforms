@@ -11,7 +11,7 @@
         "lib": ["es5", "es6", "dom"],
         "baseUrl": "./",
         "paths": {
-            "@blinkforms/core/*": ["typescript-core/src/*"],
+            "@blinkforms/core": ["typescript-core"],
         }
     },
     "include": [
