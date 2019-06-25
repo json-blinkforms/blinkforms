@@ -11,7 +11,7 @@
         "lib": ["es5", "es6", "dom"],
         "baseUrl": "./",
         "paths": {
-            "@blinkforms/core/*": ["./blinkforms/typescript-core/src/*"],
+            "@blinkforms/core": ["./blinkforms/typescript-core"],
             "@blinkforms/react": ["./blinkforms/react-json-blinkforms/bin/index.js"]
         }
     },

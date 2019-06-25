@@ -83,10 +83,10 @@ module.exports = Object.assign({}, baseConfig, {
             { from: "src/index.html", to: "." },
             { from: "src/assets/favicon.png", to: "assets" },
         ]),
-        new webpack.NormalModuleReplacementPlugin(/@blinkforms\/core\/.*/, function(resource) {
-            resource.request = resource.request.replace(/@blinkforms\/core/, path.resolve(__dirname, path.join('.', 'blinkforms', 'typescript-core', 'src')));
+        new webpack.NormalModuleReplacementPlugin(/@blinkforms\/core/, function(resource) {
+            resource.request = resource.request.replace(/@blinkforms\/core/, path.resolve(__dirname, path.join('.', 'blinkforms', 'typescript-core')));
         }),
-        new webpack.NormalModuleReplacementPlugin(/@blinkforms\/react.*/, function(resource) {
+        new webpack.NormalModuleReplacementPlugin(/@blinkforms\/react/, function(resource) {
             resource.request = resource.request.replace(/@blinkforms\/react/, path.resolve(__dirname, path.join('.', 'blinkforms', 'react-json-blinkforms', 'bin', 'index.js')));
         }),
     ]),
