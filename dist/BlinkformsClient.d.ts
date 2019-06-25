@@ -2,7 +2,7 @@ import { NodeSchema, SchemaParserConfigOpt, RootNode, NodeState, FormContext, No
 export declare type BlinkformsStateTransformer = (state: NodeState<any>, root: NodeAny) => NodeState<any>;
 export declare type BlinkformsContextUpdateHandler = (context: FormContext, source: NodeAny) => void;
 export declare type BlinkformsContextTransformer = (fn: (context: FormContext) => FormContext, source: NodeAny) => void;
-export default class BlinkformsClient {
+export declare class BlinkformsClient {
     tree: RootNode;
     state: NodeState<any>;
     stateTransformers: Array<BlinkformsStateTransformer>;

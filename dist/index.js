@@ -511,6 +511,57 @@ function transformSchemaIntoTree(node, rootNode, config) {
     return rootNode;
 }
 
+var BlinkformsClient = /** @class */ (function () {
+    function BlinkformsClient() {
+        this.tree = null;
+        this.state = null;
+        this.stateTransformers = [];
+        this.contextUpdateHandlers = [];
+        this.contextTransformers = [];
+        this.rootConfig = {};
+    }
+    BlinkformsClient.prototype.configure = function (conf) {
+        this.rootConfig = (__assign({}, this.rootConfig, conf));
+    };
+    BlinkformsClient.prototype.registerHandlers = function (handlers) {
+        var newHandlers = __assign({}, this.rootConfig.handlers);
+        Object.keys(handlers).forEach(function (key) {
+            newHandlers[key] = __assign({}, newHandlers[key], handlers[key]);
+        });
+        this.rootConfig = (__assign({}, this.rootConfig, { handlers: __assign({}, this.rootConfig.handlers, newHandlers) }));
+    };
+    BlinkformsClient.prototype.handleFormStateUpdate = function (state, root) {
+        var _this = this;
+        this.state = state;
+        this.stateTransformers.forEach(function (t) {
+            _this.state = t(_this.state, root);
+        });
+    };
+    BlinkformsClient.prototype.handleFormContextUpdate = function (context, source) {
+        this.contextUpdateHandlers.forEach(function (t) {
+            t(context, source);
+        });
+    };
+    BlinkformsClient.prototype.handleFormContextMapping = function (fn, source) {
+        this.contextTransformers.forEach(function (t) {
+            t(fn, source);
+        });
+    };
+    BlinkformsClient.prototype.render = function (schema, options) {
+        var _this = this;
+        if (options === void 0) { options = null; }
+        this.tree = transformSchemaIntoTree(schema, null, __assign({ rootSetState: function (state, root) { return _this.handleFormStateUpdate(state, root); }, rootSetContext: function (context, source) { return _this.handleFormContextUpdate(context, source); }, rootModifyContext: function (fn, source) { return _this.handleFormContextMapping(fn, source); }, rootState: {} }, this.rootConfig, options));
+        return this;
+    };
+    BlinkformsClient.prototype.getTree = function () {
+        return this.tree;
+    };
+    BlinkformsClient.prototype.getState = function () {
+        return this.state;
+    };
+    return BlinkformsClient;
+}());
+
 var CompositeNode = /** @class */ (function (_super) {
     __extends(CompositeNode, _super);
     function CompositeNode() {
@@ -598,6 +649,7 @@ var SimpleNode = /** @class */ (function (_super) {
     return SimpleNode;
 }(Node));
 
+exports.BlinkformsClient = BlinkformsClient;
 exports.CompositeNode = CompositeNode;
 exports.SimpleNode = SimpleNode;
 exports.defaultParserConfig = defaultParserConfig;

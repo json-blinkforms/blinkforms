@@ -13,7 +13,7 @@ export type BlinkformsStateTransformer = (state: NodeState<any>, root: NodeAny) 
 export type BlinkformsContextUpdateHandler = (context: FormContext, source: NodeAny) => void;
 export type BlinkformsContextTransformer = (fn: (context: FormContext) => FormContext, source: NodeAny) => void;
 
-export default class BlinkformsClient {
+export class BlinkformsClient {
     
     tree:   RootNode;
     state:  NodeState<any>;
