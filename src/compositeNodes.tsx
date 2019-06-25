@@ -21,7 +21,7 @@ export type ChildrenMap<T> = {
     [key: string]: T;
 };
 
-export abstract class CompositeNode<O, M extends NodeSchema> extends Node<NodeS, O, M> {
+export abstract class CompositeNode<O extends object, M extends NodeSchema> extends Node<NodeS, O, M> {
 
     abstract getChildrenMapFromSchema(): ChildrenMap<NodeSchema>;
 
@@ -40,7 +40,7 @@ export abstract class CompositeNode<O, M extends NodeSchema> extends Node<NodeS,
     }
 
     getValueMapFromValue(value: NodeOutputValue<O>): NodeOutputValue<O> {
-        return { ...value };
+        return { ...(value as object) } as NodeOutputValue<O>;
     }
 
     setValue(value: NodeOutputValue<O>) {

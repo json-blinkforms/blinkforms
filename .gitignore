@@ -1,3 +1,6 @@
+# Cache
+.rpt2_cache/
+
 # Logs
 logs
 *.log

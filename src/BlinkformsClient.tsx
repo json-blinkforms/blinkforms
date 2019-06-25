@@ -2,11 +2,14 @@ import {
     NodeSchema,
     SchemaParserConfigOpt,
     RootNode,
+    NodeState,
+    FormContext,
+    NodeAny,
 } from "./schemaTypes";
 
 import { transformSchemaIntoTree } from "./schemaParser";
 
-export type BlinkformsStateTransformer = (state: NodeState<any>, root: RootNode) => NodeState<any>;
+export type BlinkformsStateTransformer = (state: NodeState<any>, root: NodeAny) => NodeState<any>;
 export type BlinkformsContextUpdateHandler = (context: FormContext, source: NodeAny) => void;
 export type BlinkformsContextTransformer = (fn: (context: FormContext) => FormContext, source: NodeAny) => void;
 
@@ -15,7 +18,7 @@ export default class BlinkformsClient {
     tree:   RootNode;
     state:  NodeState<any>;
     
-    stateTransformers:       Array<BlinkformsSetStateHandler>;
+    stateTransformers:       Array<BlinkformsStateTransformer>;
     contextUpdateHandlers:   Array<BlinkformsContextUpdateHandler>;
     contextTransformers:     Array<BlinkformsContextTransformer>;
     rootConfig:              SchemaParserConfigOpt;
@@ -49,7 +52,7 @@ export default class BlinkformsClient {
         })
     }
     
-    handleFormStateUpdate(state: NodeState<any>, root: RootNode) {
+    handleFormStateUpdate(state: NodeState<any>, root: NodeAny) {
         this.state = state;
         this.stateTransformers.forEach(t => {
             this.state = t(this.state, root);
@@ -64,7 +67,7 @@ export default class BlinkformsClient {
     
     handleFormContextMapping(fn: (context: FormContext) => FormContext, source: NodeAny) {
         this.contextTransformers.forEach(t => {
-            t(context, source);
+            t(fn, source);
         });
     }
     

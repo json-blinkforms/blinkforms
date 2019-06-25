@@ -34,15 +34,15 @@ function getHandlerForType<M extends NodeSchema>(node: M, config: SchemaParserCo
     const t: NodeType = node.type;
     switch (t) {
         case NodeType.OBJECT:
-            return config.handlers.OBJECT;
+            return config.handlers.OBJECT as unknown as SchemaNodeHandlersMappingForType<NodeTypeSchemas[M["type"]]>;
         case NodeType.STRING:
-            return config.handlers.STRING;
+            return config.handlers.STRING as unknown as SchemaNodeHandlersMappingForType<NodeTypeSchemas[M["type"]]>;
         case NodeType.NUMBER:
-            return config.handlers.NUMBER;
+            return config.handlers.NUMBER as unknown as SchemaNodeHandlersMappingForType<NodeTypeSchemas[M["type"]]>;
         case NodeType.BOOLEAN:
-            return config.handlers.BOOLEAN;
+            return config.handlers.BOOLEAN as unknown as SchemaNodeHandlersMappingForType<NodeTypeSchemas[M["type"]]>;
         case NodeType.ARRAY:
-            return config.handlers.ARRAY;
+            return config.handlers.ARRAY as unknown as SchemaNodeHandlersMappingForType<NodeTypeSchemas[M["type"]]>;
         case NodeType.ROOT:
             return null;
         default:
