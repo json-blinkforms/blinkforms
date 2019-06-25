@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "webpack-merge": "^4.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.0",
@@ -27,11 +28,13 @@
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.1",
     "typescript": "^3.2.1",
-    "typescript-require": "^0.2.10"
+    "typescript-require": "^0.2.10",
+    "webpack-node-externals": "^1.7.2"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build": "webpack --config ./config/webpack/lib.js"
   },
   "keywords": [],
   "author": "",

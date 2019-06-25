@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { Example, IExampleProps } from "@blueprintjs/docs-theme";
-import Form from '../src/index';
+import { Form } from '@blinkforms/react';
 
 export class ArrayDefaultExample extends React.Component<IExampleProps, undefined> {
     public render() {
