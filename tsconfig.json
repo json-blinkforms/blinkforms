@@ -12,6 +12,7 @@
         "baseUrl": "./",
         "paths": {
             "@blinkforms/core/*": ["./blinkforms/typescript-core/src/*"],
+            "@blinkforms/react": ["./blinkforms/react-json-blinkforms/bin/index.js"]
         }
     },
     "include": [

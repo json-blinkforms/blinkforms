@@ -86,5 +86,8 @@ module.exports = Object.assign({}, baseConfig, {
         new webpack.NormalModuleReplacementPlugin(/@blinkforms\/core\/.*/, function(resource) {
             resource.request = resource.request.replace(/@blinkforms\/core/, path.resolve(__dirname, path.join('.', 'blinkforms', 'typescript-core', 'src')));
         }),
+        new webpack.NormalModuleReplacementPlugin(/@blinkforms\/react.*/, function(resource) {
+            resource.request = resource.request.replace(/@blinkforms\/react/, path.resolve(__dirname, path.join('.', 'blinkforms', 'react-json-blinkforms', 'bin', 'index.js')));
+        }),
     ]),
 });
