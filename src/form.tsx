@@ -1,9 +1,9 @@
 import * as React from "react";
 import styled  from "styled-components";
 
-import BlinkformsClient from "@blinkforms/core/BlinkformsClient";
-import { transformSchemaIntoTree } from "@blinkforms/core/schemaParser";
-import { FormContext, NodeAny, NodeState, NodeType, RootNode, Schema } from "@blinkforms/core/schemaTypes";
+import { BlinkformsClient } from "@blinkforms/core";
+import { transformSchemaIntoTree } from "@blinkforms/core";
+import { FormContext, NodeAny, NodeState, NodeType, RootNode, Schema } from "@blinkforms/core";
 
 import defaultReactHandlerProvider from "./renderers/defaultReactHandlerProvider";
 

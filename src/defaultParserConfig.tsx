@@ -1,4 +1,4 @@
-import { SchemaParserConfig } from "@blinkforms/core/schemaTypes";
+import { SchemaParserConfig } from "@blinkforms/core";
 
 export const defaultConfig: SchemaParserConfig = {
     handlers: {

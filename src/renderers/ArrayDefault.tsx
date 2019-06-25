@@ -11,7 +11,7 @@ import {
     NodeArraySchema,
     NodeOutputValue,
     NodeState,
-} from "@blinkforms/core/schemaTypes";
+} from "@blinkforms/core";
 
 export type NodeSMapping = {
     [key: string]: NodeState<any>;

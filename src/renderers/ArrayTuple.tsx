@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { ChildrenMap, CompositeNode, NodeO } from "@blinkforms/core/compositeNodes";
+import { ChildrenMap, CompositeNode, NodeO } from "@blinkforms/core";
 
 import WithDescription from "./utils/WithDescription";
 import WithErrors from "./utils/WithErrors";
@@ -10,7 +10,7 @@ import {
     FormContext,
     NodeOutputValue,
     NodeSchema,
-} from "@blinkforms/core/schemaTypes";
+} from "@blinkforms/core";
 
 export default class ArrayTuple<O, M extends NodeSchema> extends CompositeNode<Array<O>, M> {
 

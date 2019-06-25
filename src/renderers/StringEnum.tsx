@@ -4,12 +4,12 @@ import WithDescription from "./utils/WithDescription";
 import WithErrors from "./utils/WithErrors";
 import WithMargins from "./utils/WithMargins";
 
-import { SimpleNode } from "@blinkforms/core/simpleNodes";
+import { SimpleNode } from "@blinkforms/core";
 
 import {
     FormContext,
     NodeStringSchema,
-} from "@blinkforms/core/schemaTypes";
+} from "@blinkforms/core";
 
 export default class StringEnum extends SimpleNode<string, NodeStringSchema> {
     getInitialValue() {

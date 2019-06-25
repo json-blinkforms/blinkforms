@@ -1,12 +1,12 @@
 import * as React from "react";
 
-import { SimpleNode } from "@blinkforms/core/simpleNodes";
+import { SimpleNode } from "@blinkforms/core";
 
 import {
     FormContext,
     NodeError,
     NodeStringSchema,
-} from "@blinkforms/core/schemaTypes";
+} from "@blinkforms/core";
 
 export default class StringNotice extends SimpleNode<string, NodeStringSchema> {
     getInitialValue() {
