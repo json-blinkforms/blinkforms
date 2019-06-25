@@ -267,20 +267,20 @@ export class RootNode extends Node<any, any, NodeSchema> {
     }
 
     getOutput(options) {
-        if (this.getChildren().length === 0) {
+        if ((this as RootNode).getChildren().length === 0) {
             return {
                 __data: null,
-                __source: this,
+                __source: (this as RootNode),
             };
-        } else if (this.getChildren().length === 1) {
+        } else if ((this as RootNode).getChildren().length === 1) {
             return {
-                __data: this.getChildren()[0].getOutput(options),
-                __source: this,
+                __data: (this as RootNode).getChildren()[0].getOutput(options),
+                __source: (this as RootNode),
             };
         } else {
             return {
-                __data: this.getChildren().map(child => child.getOutput(options)),
-                __source: this,
+                __data: (this as RootNode).getChildren().map(child => child.getOutput(options)),
+                __source: (this as RootNode),
             };
         }
     }
