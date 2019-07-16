@@ -1,0 +1,3 @@
+[submodule "typescript-core"]
+	path = typescript-core
+	url = https://github.com/json-blinkforms/typescript-core.git
